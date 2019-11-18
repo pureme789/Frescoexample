@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Loading Images From URL"
+            android:background="#FFC0CB"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Simple Image"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            fresco:placeholderImage="@mipmap/ic_launcher" />
+
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="#FFC0CB"
+            android:text="Loading Images From URL" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="SimpleDraweeView"
+            android:layout_height="wrap_content" />
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/view"
+            android:layout_width="430dp"
+            android:layout_height="240dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:fadeDuration="1000"
+            fresco:roundAsCircle="true"/>
+
+
+    </LinearLayout>
+</ScrollView>
